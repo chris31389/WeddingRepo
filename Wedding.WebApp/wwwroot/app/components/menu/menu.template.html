@@ -1,0 +1,14 @@
+﻿<div class="invite-border">
+    <div class="invite-card">
+        <navbar title="$ctrl.content.title" />
+        <section class="menu">
+            <h3 class="menusectiontitle">Starters</h3>
+            <mealoption ng-repeat="starter in $ctrl.content.starters.options" option="starter"></mealoption>
+            <h3 class="menusectiontitle">Main Courses</h3>
+            <mealoption ng-repeat="main in $ctrl.content.mains.options" option="main"></mealoption>
+            <h5 ng-bind="$ctrl.content.mains.caption" ng-show="$ctrl.content.mains.caption"></h5>
+            <h3 class="menusectiontitle">Desserts</h3>
+            <mealoption ng-repeat="dessert in $ctrl.content.desserts.options" option="dessert"></mealoption>
+        </section>
+    </div>
+</div>

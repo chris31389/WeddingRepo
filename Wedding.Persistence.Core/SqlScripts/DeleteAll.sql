@@ -1,0 +1,8 @@
+Use TestDb;
+
+DELETE FROM InviteWeddingEvent;
+DELETE FROM [User];
+DELETE FROM Invitee;
+DELETE FROM Meal;
+DELETE FROM Rsvp;
+DELETE FROM Invite;

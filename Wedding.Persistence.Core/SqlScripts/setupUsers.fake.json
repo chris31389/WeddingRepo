@@ -1,0 +1,88 @@
+﻿[
+    {
+        "UserName": "user001",
+        "WeddingEventIds": [
+            "C72DC6FE-9D94-4CC9-A43A-31E9F23B0A4B",
+            "A4A0D1E7-19E8-42D1-AB44-576285CD924B",
+            "8D42227B-C85A-406A-B552-9E42E3BDB600"
+        ],
+        "Invitees": [
+            {
+                "Fullname": "Yasmin Giles",
+                "IsAdult": true
+            },
+            {
+                "Fullname": "Chris Butler",
+                "IsAdult": true
+            }
+        ]
+    },
+    {
+        "UserName": "user002",
+        "WeddingEventIds": [
+            "C72DC6FE-9D94-4CC9-A43A-31E9F23B0A4B",
+            "8D42227B-C85A-406A-B552-9E42E3BDB600"
+        ],
+        "Invitees": [
+            {
+                "Fullname": "Yasmin Giles",
+                "IsAdult": true
+            },
+            {
+                "Fullname": "Chris Butler",
+                "IsAdult": true
+            }
+        ]
+    },
+    {
+        "UserName": "user003",
+        "WeddingEventIds": [
+            "C72DC6FE-9D94-4CC9-A43A-31E9F23B0A4B"
+        ],
+        "Invitees": [
+            {
+                "Fullname": "Yasmin Giles",
+                "IsAdult": true
+            },
+            {
+                "Fullname": "Chris Butler",
+                "IsAdult": true
+            }
+        ]
+    },
+    {
+        "UserName": "user004",
+        "WeddingEventIds": [
+            "C72DC6FE-9D94-4CC9-A43A-31E9F23B0A4B",
+            "A4A0D1E7-19E8-42D1-AB44-576285CD924B",
+            "8D42227B-C85A-406A-B552-9E42E3BDB600"
+        ],
+        "Invitees": [
+            {
+                "Fullname": "Yasmin Giles",
+                "IsAdult": true
+            },
+            {
+                "Fullname": "Chris Butler",
+                "IsAdult": false
+            }
+        ]
+    },
+    {
+        "UserName": "user005",
+        "WeddingEventIds": [
+            "A4A0D1E7-19E8-42D1-AB44-576285CD924B",
+            "8D42227B-C85A-406A-B552-9E42E3BDB600"
+        ],
+        "Invitees": [
+            {
+                "Fullname": "Yasmin Giles",
+                "IsAdult": true
+            },
+            {
+                "Fullname": "Chris Butler",
+                "IsAdult": false
+            }
+        ]
+    }
+]

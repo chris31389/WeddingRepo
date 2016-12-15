@@ -1,0 +1,13 @@
+<section>
+    <div class="invite-border">
+        <div class="invite-card">
+            <navbar title="$ctrl.title" />
+            <p>You have been invited to: </p>
+            <ul>
+                <li ng-repeat="session in $ctrl.weddingevents" ng-bind="session.name"></li>
+            </ul>
+
+            <itineraryday ng-repeat="events in $ctrl.itinerary.days" events="events"></itineraryday>
+        </div>
+    </div>
+</section>

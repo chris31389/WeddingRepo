@@ -1,0 +1,260 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+/*@import url('https://fonts.googleapis.com/css?family=Niconne');
+@import url('https://fonts.googleapis.com/css?family=Redressed');*/
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #A9A9A9;
+    color: #EFEFEF;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+.maxwidth-360 {
+    max-width: 360px;
+}
+
+/* Styles for angular ui transition animations */
+.angular-animation-container {
+    position: relative;
+}
+
+.invite-border {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ededed;
+    background: linear-gradient(135deg, transparent 20px, #ededed 0) top left, linear-gradient(225deg, transparent 20px, #ededed 0) top right, linear-gradient(315deg, transparent 20px, #ededed 0) bottom right, linear-gradient(45deg, transparent 20px, #ededed 0) bottom left;
+    background-image: radial-gradient(circle at 0 0, rgba(204,0,0,0) 19px, #ededed 20px), radial-gradient(circle at 100% 0, rgba(204,0,0,0) 19px, #ededed 20px), radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 19px, #ededed 20px), radial-gradient(circle at 0 100%, rgba(204,0,0,0) 19px, #ededed 20px);
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+}
+
+.invite-card {
+    padding: 20px;
+    background-color: #6B8E99;
+    background: linear-gradient(135deg, transparent 10px, #6B8E99 0) top left, linear-gradient(225deg, transparent 10px, #6B8E99 0) top right, linear-gradient(315deg, transparent 10px, #6B8E99 0) bottom right, linear-gradient(45deg, transparent 10px, #6B8E99 0) bottom left;
+    background-image: radial-gradient(circle at 0 0, rgba(204,0,0,0) 19px, #6B8E99 20px), radial-gradient(circle at 100% 0, rgba(204,0,0,0) 19px, #6B8E99 20px), radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 19px, #6B8E99 20px), radial-gradient(circle at 0 100%, rgba(204,0,0,0) 19px, #6B8E99 20px);
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+}
+
+.input-login {
+    max-width: 200px;
+    margin: 0 auto;
+    float: none;
+}
+
+.img-login {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.navbar-link {
+    color: white;
+}
+
+    .navbar-link:hover, .navbar-link:focus {
+        background-color: #FFFF00;
+        color: white;
+    }
+
+.text-under-logo {
+    font-size: 12px;
+}
+
+.title-under-logo, .text-under-logo {
+    text-align: center;
+}
+
+.meal-button, .rsvp-button {
+    text-align: center;
+}
+
+.invite-card a {
+    color: orange !important;
+}
+
+.welcome-line1 {
+    font-size: 28px;
+}
+
+.welcome-line2 {
+    font-size: 14px;
+}
+
+.welcome-line3 {
+    font-size: 32px;
+}
+
+.welcome-line4 {
+    font-size: 36px;
+}
+
+.welcome {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.welcome-xs {
+    background-color: #ededed;
+    color: #6B8E99;
+}
+
+.welcome-sm {
+    background-image: url('../media/chrisandyasmin2.png');
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;     
+}
+
+.parent-title, .parent-name {
+    text-align: center;
+}
+
+.parents {
+    padding-bottom: 20px;
+}
+
+.img-center {
+    margin: auto;
+}
+
+.img-full-size {
+    min-width: 100%;
+}
+
+.map-full-size {
+    height: 100%;
+    width: 100%;
+    min-height: 400px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.iframe-border {
+    border: solid 1px black;
+    background-color: #fff;
+    padding-left: 10px;
+    min-width: 235px;
+}
+
+@media (max-width: 767px) {
+    .welcome-img-left, .welcome-img-right {
+        margin: auto;
+    }
+
+    .xs-only-margin-bottom-10 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .welcome-img-right {
+        align-content: right;    
+    }
+
+    .equal-md {
+        display: inline-flex;
+        width: calc(100% + 30px);
+        align-items: center;
+    }
+
+    .grooms-party-section-title {
+        text-align: right;
+    }
+
+    .bridal-party-section-title {
+        text-align: left;
+    }
+
+    .grooms-party-title, .grooms-party-name {
+        text-align: left;
+    }
+
+    .bridal-party-title, .bridal-party-name {
+        text-align: right;
+    }
+
+    /*.bridal-party-description, .grooms-party-description {
+        text-align: justify;
+    }*/
+
+    .welcome-title {
+        font-size: 36px;
+    }
+
+    .welcome-line1 {
+        font-size: 28px;
+    }
+
+    .welcome-line2 {
+        font-size: 16px;
+    }
+
+    .welcome-line3 {
+        font-size: 32px;
+    }
+
+    .welcome-line4 {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 992px) {
+    .welcome-title {
+        font-size: 36px;
+    }
+
+    .welcome-line1 {
+        padding-top: 20px;
+        font-size: 32px;
+    }
+
+    .welcome-line2 {
+        font-size: 18px;
+    }
+
+    .welcome-line3 {
+        font-size: 38px;
+    }
+
+    .welcome-line4 {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .welcome-title {
+        font-size: 36px;
+    }
+
+    .welcome-line1 {
+        padding-top: 20px;
+        font-size: 38px;
+    }
+
+    .welcome-line2 {
+        font-size: 20px;
+    }
+
+    .welcome-line3 {
+        font-size: 42px;
+    }
+
+    .welcome-line4 {
+        font-size: 56px;
+    }
+}

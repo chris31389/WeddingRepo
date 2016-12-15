@@ -1,0 +1,97 @@
+<section class="align-center">
+    <div class="invite-border">
+        <div class="invite-card">
+            <navbar title="$ctrl.title" />
+            <div class="row parents">
+                <div class="col-sm-4">
+                    <h3 class="parent-name">David Butler</h3>
+                    <p class="parent-title">Father of the Groom</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="parent-name">Sandra Giles</h3>
+                    <p class="parent-title">Mother of the Bride</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="parent-name">Mark Giles</h3>
+                    <p class="parent-title">Father of the Bride</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="parent-name">Jane Butler</h3>
+                    <p class="parent-title">Mother of the Groom</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="parent-name">Phil Eastol</h3>
+                    <p class="parent-title">Mother of the Bride's Partner</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3 class="parent-name">Andi Pennock</h3>
+                    <p class="parent-title">Father of the Bride's Partner</p>
+                </div>
+            </div>
+            <section ng-show="weddingPartyWindowWidth > 767">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="grooms-party-section-title">Grooms Party</h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="bridal-party-section-title">Bridal Party</h3>
+                    </div>
+                </div>
+                <div class="row margin-bottom-10" ng-repeat="people in $ctrl.party">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-sm-push-8">
+                                <img ng-src="{{ 'media/' + (people.groomsParty.image.xs ? people.groomsParty.image.xs : 'person-sideon1.jpg')}}"
+                                     alt="personPhoto" class="img-responsive" />
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-sm-pull-4">
+                                <h3 class="grooms-party-name" ng-bind="people.groomsParty.name"></h3>
+                                <p class="grooms-party-title" ng-bind="people.groomsParty.role"></p>
+                                <p class="grooms-party-description" ng-bind="people.groomsParty.description"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <img ng-src="{{ 'media/' + (people.bridalParty.image.xs ? people.bridalParty.image.xs : 'person-sideon2.jpg')}}"
+                                     alt="personPhoto" class="img-responsive" />
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <h3 class="bridal-party-name" ng-bind="people.bridalParty.name"></h3>
+                                <p class="bridal-party-title" ng-bind="people.bridalParty.role"></p>
+                                <p class="bridal-party-description" ng-bind="people.bridalParty.description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center" ng-show="weddingPartyWindowWidth < 768">
+                <h3 class="grooms-party-section-title">Grooms Party</h3>
+                <div class="row" ng-repeat="people in $ctrl.party">
+                    <div class="col-xs-12">
+                        <img ng-src="{{ 'media/' + (people.groomsParty.image.xs ? people.groomsParty.image.xs : 'person.2.png')}}"
+                             alt="personPhoto" class="img-responsive img-center" />
+                    </div>
+                    <div class="col-xs-12">
+                        <h3 class="grooms-party-name" ng-bind="people.groomsParty.name"></h3>
+                        <p class="grooms-party-title" ng-bind="people.groomsParty.role"></p>
+                        <p class="grooms-party-description" ng-bind="people.groomsParty.description"></p>
+                    </div>
+                </div>
+                <h3 class="bridal-party-section-title">Bridal Party</h3>
+                <div class="row" ng-repeat="people in $ctrl.party">
+                    <div class="col-xs-12">
+                        <img ng-src="{{ 'media/' + (people.bridalParty.image.xs ? people.bridalParty.image.xs : 'person.2.png')}}"
+                             alt="personPhoto" class="img-responsive img-center" />
+                    </div>
+                    <div class="col-xs-12">
+                        <h3 class="bridal-party-name" ng-bind="people.bridalParty.name"></h3>
+                        <p class="bridal-party-title" ng-bind="people.bridalParty.role"></p>
+                        <p class="bridal-party-description" ng-bind="people.bridalParty.description"></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+﻿<section class="honeymoon">
+    <div class="invite-border">
+        <div class="invite-card">
+            <navbar title="$ctrl.title" />
+
+            <div class="row margin-bottom-10">
+                <div class="col-xs-12">
+                    <img class="img-responsive img-thumbnail img-full-size" src="media/paradisus-playa-del-carmen-la-perla.jpg" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="text-center">Paradisus Playa Del Carmen La Perla, Mexico</h3>
+                    <p class="text-center">If you would like to be generous and provide a wedding gift, we would really appreciate a contribution towards our dream honeymoon.</p>
+                </div>
+            </div>
+            <div ng-repeat="section in $ctrl.sections" class="row equal-md margin-bottom-10">
+                <div class="col-sm-4">
+                    <img class="img-responsive img-thumbnail img-full-size" ng-src="{{ 'media/' + section.images[0] }}" />
+                </div>
+                <div class="col-sm-4">
+                    <p ng-bind="section.content"></p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-responsive img-thumbnail img-full-size" ng-src="{{ 'media/' + section.images[1] }}" />
+                </div>
+            </div>
+            <div class="row equal-md margin-bottom-10">
+                <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
+                    <h4>Contributing to a Kuoni Gift List</h4>
+                    <p>Our Kuoni Gift List Number is <u>32919</u></p>
+                    <p>Online: Enter the Gift List Number <u>32919</u> in the Kuoni Gift List card and make a secure payment. You can also leave a personal message with your contribution.</p>
+                    <p>Phone: Call 01306 744444 between 9am-6pm Monday to Friday, or 9am-5pm Saturday and tell our gift list team how much you would like to contribute to a Kuoni Gift List. Have the Gift List Number <u>32919</u> handy, as well as your debit or credit card.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                    <div class="iframe-border">
+                        <iframe id="giftListLogin" src="http://booking.kuoni.co.uk/ob/x1root?TRNTPD=GF03" width="270" height="300" scrolling="no" frameborder="0" style="display: block; position: relative;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

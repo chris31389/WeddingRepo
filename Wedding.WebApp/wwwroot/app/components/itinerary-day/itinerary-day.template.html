@@ -1,0 +1,23 @@
+<section>
+    <div class="itinerary-day">
+        <h4>
+            <span ng-bind="$ctrl.events.day"></span>
+            <span> </span>
+            <span ng-bind="$ctrl.events.date"></span>
+        </h4>
+        <div ng-repeat="event in $ctrl.events.timetable" class="row">
+            <div class="col-sm-2">
+                <h4 ng-bind="event.time"></h4>
+            </div>
+            <div class="col-sm-10">
+                <h4 ng-bind="event.title"></h4>
+            </div>
+            <div class="col-sm-10 col-sm-offset-2">
+                <p ng-bind="event.description"></p>
+            </div>
+            <div class="col-sm-10 col-sm-offset-2" ng-show="event.image">
+                <img class="img-responsive img-thumbnail" ng-src="/media/{{event.image}}"/>
+            </div>
+        </div>
+    </div>
+</section>

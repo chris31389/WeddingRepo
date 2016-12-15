@@ -1,0 +1,49 @@
+﻿<section>
+    <div class="invite-border">
+        <div class="invite-card">
+            <navbar title="vm.title" />
+            <p>We are delighted to invite you to our wedding on the 29th April 2017, at Park Farm Hotel, Norfolk</p>
+            <p>We would love it if you could make it to</p>
+            <ul>
+                <li ng-repeat="weddingEvent in vm.weddingEvents | CustomFilter:vm.rsvp.weddingEventIds:'id'">
+                    <p ng-bind="weddingEvent.name"></p>
+                </li>
+            </ul>
+            <h3>Your RSVP</h3>
+            <form class="form-horizontal margin-bottom-10" name="form" ng-submit="vm.sendRsvp()" role="form">
+                <div ng-repeat="invitee in vm.rsvp.individualRsvps">
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="{{invitee.fullName}}" ng-bind="invitee.fullName"></label>
+                            <div class="col-sm-8">
+                                <input type="checkbox"
+                                       name="response"
+                                       id="{{invitee.fullName}}"
+                                       ng-model="invitee.canCome" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="email">Your Email Address</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="email" id="email" class="form-control" ng-model="vm.rsvp.email" required />
+                            <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Email is required</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-4">
+                        <div class="form-actions">
+                            <button type="submit" ng-disabled="form.$invalid" class="btn btn-danger">Let us know</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div ng-show="vm.mealLink.show" class="alert alert-info">
+                <strong>Remember!</strong> Make sure you register your meal choices <a ui-sref="meal" ng-show="vm.mealLink.show">here</a>
+            </div>
+        </div>
+    </div>
+</section>

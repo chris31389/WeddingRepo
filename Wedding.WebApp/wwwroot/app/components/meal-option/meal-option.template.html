@@ -1,0 +1,10 @@
+﻿<section class="meal-option">
+    <span style="font-weight: bold">
+        <span ng-bind="$ctrl.option.name"></span>
+        <span ng-show="$ctrl.option.isVegetarian"> (v)</span>
+    </span>
+    <span ng-show="$ctrl.option.description">
+        <span>: </span>
+        <span ng-bind="$ctrl.option.description"></span>
+    </span>
+</section>

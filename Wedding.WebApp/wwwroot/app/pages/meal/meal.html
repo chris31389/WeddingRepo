@@ -1,0 +1,65 @@
+﻿<mymenu content="vm.menu.adult"></mymenu>
+<mymenu content="vm.menu.child"></mymenu>
+
+<section>
+    <div class="invite-border">
+        <div class="invite-card">
+            <navbar title="vm.title" />
+            <p>Make sure you fill in all your choices so you can let us know</p>
+            <form class="form-horizontal" name="form" ng-submit="vm.sendMeals()" role="form">
+                <div ng-repeat="individualMealSelection in vm.meal.individualMealSelections">
+                    <h4 ng-bind="individualMealSelection.fullName"></h4>
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="starterSelect-{{individualMealSelection.id}}">Your Starter</label>
+                            <div class="col-sm-8">
+                                <select class="form-control" id="starterSelect-{{individualMealSelection.id}}" ng-model="individualMealSelection.starterChoice" required>
+                                    <option ng-repeat="option in vm.starterMealChoices | AgeFilter: individualMealSelection.isAdult: 'secondaryValue'"
+                                            value="{{option.id}}" ng-bind="option.name"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="mainSelect-{{individualMealSelection.id}}">Your Main</label>
+                            <div class="col-sm-8">
+                                <select class="form-control" id="mainSelect-{{individualMealSelection.id}}" ng-model="individualMealSelection.mainChoice" required>
+                                    <option ng-repeat="option in vm.mainMealChoices | AgeFilter: individualMealSelection.isAdult: 'secondaryValue'"
+                                            value="{{option.id}}" ng-bind="option.name"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="dessertSelect-{{individualMealSelection.id}}">Your Dessert</label>
+                            <div class="col-sm-8">
+                                <select class="form-control" id="dessertSelect-{{individualMealSelection.id}}" ng-model="individualMealSelection.dessertChoice" required>
+                                    <option ng-repeat="option in vm.dessertMealChoices | AgeFilter: individualMealSelection.isAdult: 'secondaryValue'"
+                                            value="{{option.id}}" ng-bind="option.name"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="dietaryRequirements-{{individualMealSelection.id}}">Dietary Requirements</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="dietaryRequirements-{{individualMealSelection.id}}"
+                                       ng-model="individualMealSelection.dietaryRequirements" placeholder="Enter any dietary requirements you may have" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-actions">
+                        <div class="col-sm-offset-4 col-sm-8">
+                            <button type="submit" ng-disabled="form.$invalid" class="btn btn-danger">Let us know</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

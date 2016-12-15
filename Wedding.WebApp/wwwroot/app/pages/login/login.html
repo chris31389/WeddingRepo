@@ -1,0 +1,23 @@
+﻿<div class="container">
+    <div class="invite-border">
+        <div class="invite-card">
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <img ng-src="{{'media/logo.png'}}" alt="personPhoto" class="img-login img-responsive center-block">
+                    <h3 class="text-center">You are invited to</h3>
+                    <h1 class="text-center">The Butler Wedding</h1>
+                    <br />
+                    <div class="text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" ng-model="vm.loginInfo.UserName" class="form-control input-login" placeholder="Username" required autofocus>
+                            </div>
+                            <input class="btn btn-default" type="submit" ng-click="vm.login()" ng-value="vm.loginValue" ng-disabled="vm.loginDisabled" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <myfooter />
+</div>

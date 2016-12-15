@@ -1,0 +1,26 @@
+{
+    "version": "1.0.0-*",
+    "testRunner": "nunit",
+    "dependencies": {
+        "dotnet-test-nunit": "3.4.0-beta-2",
+        "moq.netcore": "4.4.0-beta8",
+        "MSTest.TestFramework": "1.0.3-preview",
+        "NETStandard.Library": "1.6.0",
+        "NUnit": "3.4.1",
+        "Wedding.Domain.Core": "1.0.0-*"
+    },
+
+    "frameworks": {
+        "netstandard1.6": {
+            "imports": [
+                "dnxcore50",
+                "netcoreapp1.0"
+            ]
+        }
+    },
+
+    "runtimes": {
+        "win10-x86": {},
+        "win10-x64": {}
+    }
+}

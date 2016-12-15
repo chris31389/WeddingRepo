@@ -1,0 +1,34 @@
+Install-Package Microsoft.EntityFrameworkCore.Tools –Pre
+Add-Migration -Project Wedding.Persistence
+
+
+
+User will require login -> they get back an authorisation base64 string
+that will be used to check each transaction from then on
+
+
+after logging in, the app will receive the invite id, that relates to that user
+
+
+
+Create Meals: http://localhost:11644/api/Meal/52df6a26-e3fb-4d2e-88d9-9e4953d774c5
+[{
+	"InviteeId": "c0b1aa78-89a1-4c00-8205-eb12a19a7a4e",
+	"DietaryRequirements": "",
+	"DessertChoiceId": "92AC9A6D-A2BA-404C-8F9F-850451EB9DB7",
+	"MainChoiceId": "1ED1CE70-10FD-45D3-8A90-6ACB27D00C29",
+	"StarterChoiceId": "C628AA30-F1E9-4418-864D-698187B2558A"
+}]
+
+Create RSVPs: http://localhost:11644/api/Rsvp/52df6a26-e3fb-4d2e-88d9-9e4953d774c5
+{
+	"Email": "yasminclaire@hotmail.com",
+	"Rsvps": [{
+		"InviteeId":"c0b1aa78-89a1-4c00-8205-eb12a19a7a4e",
+		"CanCome":true
+	}]
+}
+
+
+Build steps
+https://www.visualstudio.com/en-us/docs/build/apps/aspnet/aspnetcore-to-azure

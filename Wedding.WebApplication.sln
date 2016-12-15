@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{8A97C749-93DE-41EF-ACC0-6A897ADB7E4A}"
+	ProjectSection(SolutionItems) = preProject
+		notes.txt = notes.txt
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wedding.Domain.Core", "Wedding.Domain.Core\Wedding.Domain.Core.xproj", "{CD48F331-3E48-4996-8EDF-A470972A2ABB}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wedding.Common.Core", "Wedding.Common.Core\Wedding.Common.Core.xproj", "{3370BE64-E13C-4823-97DD-E3F6C8741E3D}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wedding.Persistence.Core", "Wedding.Persistence.Core\Wedding.Persistence.Core.xproj", "{EBA8BAA4-7AF3-4E4E-823E-6139E8ADD4BC}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wedding.Application.Core", "Wedding.Application.Core\Wedding.Application.Core.xproj", "{C5CD97FC-1128-48BA-8AAD-A04D8CF92D80}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wedding.WebApp", "Wedding.WebApp\Wedding.WebApp.xproj", "{C99900BC-1B2E-45FA-9899-05BD34DFDF80}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wedding.AdminWebApp", "Wedding.AdminWebApp\Wedding.AdminWebApp.xproj", "{5C94224D-BADE-4D57-A090-1E4C320D9620}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{39B453B3-1BF6-42A8-95F0-8508CA8FAC29}"
+	ProjectSection(SolutionItems) = preProject
+		WE-browsers.xml = WE-browsers.xml
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Wedding.Domain.Core.Tests", "Wedding.Domain.Core.Tests\Wedding.Domain.Core.Tests.xproj", "{5FEFD770-331A-4C70-AA2B-18A6BE820C1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD48F331-3E48-4996-8EDF-A470972A2ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD48F331-3E48-4996-8EDF-A470972A2ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD48F331-3E48-4996-8EDF-A470972A2ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD48F331-3E48-4996-8EDF-A470972A2ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3370BE64-E13C-4823-97DD-E3F6C8741E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3370BE64-E13C-4823-97DD-E3F6C8741E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3370BE64-E13C-4823-97DD-E3F6C8741E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3370BE64-E13C-4823-97DD-E3F6C8741E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA8BAA4-7AF3-4E4E-823E-6139E8ADD4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA8BAA4-7AF3-4E4E-823E-6139E8ADD4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA8BAA4-7AF3-4E4E-823E-6139E8ADD4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA8BAA4-7AF3-4E4E-823E-6139E8ADD4BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5CD97FC-1128-48BA-8AAD-A04D8CF92D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5CD97FC-1128-48BA-8AAD-A04D8CF92D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5CD97FC-1128-48BA-8AAD-A04D8CF92D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5CD97FC-1128-48BA-8AAD-A04D8CF92D80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99900BC-1B2E-45FA-9899-05BD34DFDF80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99900BC-1B2E-45FA-9899-05BD34DFDF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99900BC-1B2E-45FA-9899-05BD34DFDF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99900BC-1B2E-45FA-9899-05BD34DFDF80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C94224D-BADE-4D57-A090-1E4C320D9620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C94224D-BADE-4D57-A090-1E4C320D9620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C94224D-BADE-4D57-A090-1E4C320D9620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C94224D-BADE-4D57-A090-1E4C320D9620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FEFD770-331A-4C70-AA2B-18A6BE820C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FEFD770-331A-4C70-AA2B-18A6BE820C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FEFD770-331A-4C70-AA2B-18A6BE820C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FEFD770-331A-4C70-AA2B-18A6BE820C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

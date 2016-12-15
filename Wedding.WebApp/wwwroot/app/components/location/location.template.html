@@ -1,0 +1,14 @@
+<div class="row margin-bottom-10">
+    <div class="col-sm-6 xs-only-margin-bottom-10">
+        <h3 ng-bind="$ctrl.location.name"></h3>
+        <p ng-bind="$ctrl.location.role"></p>
+        <p ng-bind="$ctrl.location.address"></p>
+        <img ng-src="{{ 'media/' + $ctrl.location.image}}"
+             alt="personPhoto" class="img-responsive img-thumbnail" />
+    </div>
+    <div class="col-sm-6 xs-only-margin-bottom-10">
+        <iframe class="map-full-size" frameborder="0" style="border:0"
+                ng-src="{{ $ctrl.location.googleMapUrl }}" allowfullscreen></iframe>
+    </div>
+</div>
+<hr />

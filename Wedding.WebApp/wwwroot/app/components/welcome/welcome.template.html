@@ -1,0 +1,40 @@
+<div class="invite-border">
+    <div class="invite-card">
+        <navbar />
+        <section class="welcome welcome-sm" ng-show="welcomeWindowWidth >= 768">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-8">
+                    <h1 class="welcome-title">Chris and Yasmin</h1>
+                    <p class="welcome-line1">Invite you</p>
+                    <p class="welcome-line2">To their Wedding</p>
+                    <p class="welcome-line3">Celebration</p>
+                    <p class="welcome-line4">29.04.2017</p>
+                </div>
+            </div>
+        </section>
+        <section class="welcome welcome-xs" ng-show="welcomeWindowWidth < 768">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="media/chris-lookdown.png" alt="chris-sideon" class="img-responsive welcome-img-left">
+                </div>
+                <div class="col-sm-4 col-sm-offset-8" ng-class="{{ col-sm-offset-8}}">
+                    <h1 class="welcome-title">Chris and Yasmin</h1>
+                    <p class="welcome-line1">Invite you</p>
+                    <p class="welcome-line2">To their Wedding</p>
+                    <p class="welcome-line3">Celebration</p>
+                    <p class="welcome-line4">29.04.2017</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="media/yasmin-lookup.png" alt="yasmin-sideon" class="img-responsive welcome-img-right">
+                </div>
+            </div>
+        </section>
+        <section class="rsvp-button" ng-show="!$ctrl.rsvp.rsvped">
+            <p>You need to RSVP! <a ui-sref="rsvp">click here</a></p>
+        </section>
+
+        <section class="meal-button" ng-show="$ctrl.showMeal && !$ctrl.meals.selectedMeals">
+            <p>You need to select you meals! <a ui-sref="meal">click here</a></p>
+        </section>
+    </div>
+</div>

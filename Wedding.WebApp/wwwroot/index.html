@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Butler Wedding</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="libraries/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/styles/menu.css">
+    <link rel="stylesheet" href="/styles/site.css">
+    <!-- endinject -->
+</head>
+<body ng-app="app">
+    <div ui-view="login"></div>
+    <div ui-view="main"></div>
+
+    <!-- bower:js -->
+    <script src="libraries/jquery/dist/jquery.js"></script>
+    <script src="libraries/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="libraries/angular/angular.js"></script>
+    <script src="libraries/angular-resource/angular-resource.js"></script>
+    <script src="libraries/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="libraries/ngstorage/ngStorage.js"></script>
+    <!-- endbower -->
+    <!-- inject:js -->
+    <script src="/scripts/unblur.js"></script>
+    <script src="/app/index.module.js"></script>
+    <script src="/app/filters/age.filter.js"></script>
+    <script src="/app/filters/custom.filter.js"></script>
+    <script src="/app/services/auth.service.js"></script>
+    <script src="/app/services/invite.service.js"></script>
+    <script src="/app/services/itinerary.service.js"></script>
+    <script src="/app/services/logoff.service.js"></script>
+    <script src="/app/services/meal.service.js"></script>
+    <script src="/app/services/menu.service.js"></script>
+    <script src="/app/services/reference.service.js"></script>
+    <script src="/app/services/rsvp.service.js"></script>
+    <script src="/app/services/wedding-event.service.js"></script>
+    <script src="/app/pages/home/home.controller.js"></script>
+    <script src="/app/pages/honeymoon/honeymoon.controller.js"></script>
+    <script src="/app/pages/itinerary/itinerary.controller.js"></script>
+    <script src="/app/pages/login/login.controller.js"></script>
+    <script src="/app/pages/meal/meal.controller.js"></script>
+    <script src="/app/pages/rsvp/rsvp.controller.js"></script>
+    <script src="/app/pages/main/main.controller.js"></script>
+    <script src="/app/components/footer/footer.component.js"></script>
+    <script src="/app/components/honeymoon/honeymoon.component.js"></script>
+    <script src="/app/components/itinerary/itinerary.component.js"></script>
+    <script src="/app/components/location/location.component.js"></script>
+    <script src="/app/components/location/locations.component.js"></script>
+    <script src="/app/components/itinerary-day/itinerary-day.component.js"></script>
+    <script src="/app/components/meal-option/meal-option.component.js"></script>
+    <script src="/app/components/navbar/navbar.component.js"></script>
+    <script src="/app/components/menu/menu.component.js"></script>
+    <script src="/app/components/wedding-party/wedding-party.component.js"></script>
+    <script src="/app/components/welcome/welcome.component.js"></script>
+    <script src="/app/index.route.js"></script>
+    <script src="/app/pages/honeymoon/honeymoon.route.js"></script>
+    <script src="/app/pages/itinerary/itinerary.route.js"></script>
+    <script src="/app/pages/login/login.route.js"></script>
+    <script src="/app/pages/meal/meal.route.js"></script>
+    <script src="/app/pages/rsvp/rsvp.route.js"></script>
+    <script src="/app/pages/main/main.route.js"></script>
+    <!-- endinject -->
+</body>
+</html>
